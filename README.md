@@ -1,12 +1,7 @@
-
 <p align="center">
-  <video src="https://files.catbox.moe/3yy06p.mp4"
-         width="720"
-         controls
-         muted
-         playsinline>
-  </video>
+  <img src="https://files.catbox.moe/8lh91d.png" width="720" />
 </p>
+
 
 # 👋 Hi, I'm Karin  
 **Fullstack Engineer — Backend Focused**
