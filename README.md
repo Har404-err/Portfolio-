@@ -1,20 +1,99 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+<!-- Portfolio Video Preview -->
+<p align="center">
+  <video src="https://files.catbox.moe/3yy06p.mp4"
+         width="720"
+         controls
+         muted
+         playsinline>
+  </video>
+</p>
 
-# Run and deploy your AI Studio app
+# 👋 Hi, I'm Karin  
+**Fullstack Engineer — Backend Focused**
 
-This contains everything you need to run your app locally.
+I build reliable web systems with clean architecture, stable performance, and elegant interfaces.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1cqDDmJj5pvWL82tsuIoomXUg0hyc1zk8
+This portfolio showcases how I approach **real-world problems**, not just demo projects.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🚀 What I Do
 
+I help individuals, startups, and teams build:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Scalable backend systems  
+- Clean & responsive web applications  
+- APIs ready for production  
+- Systems that are easy to maintain and grow  
+
+My focus is not only *making things work*, but making sure they **keep working**.
+
+---
+
+## 🧠 My Engineering Mindset
+
+- Stability over hype  
+- Clear structure over shortcuts  
+- Business needs first, technology second  
+
+Good software should be:
+- Easy to understand
+- Safe to operate
+- Ready for future changes
+
+---
+
+## 🛠️ Core Skills
+
+**Backend**
+- API Design & Development  
+- Database Architecture  
+- Authentication & Security  
+- Performance Optimization  
+
+**Frontend**
+- Modern UI Development  
+- Responsive Layouts  
+- Clean Code Practices  
+
+**Production**
+- Deployment-ready systems  
+- Reliability awareness  
+- Long-term maintainability  
+
+---
+
+## 📂 Selected Work
+
+This portfolio includes:
+- Production-minded architectures  
+- Clean, maintainable codebases  
+- UI built with usability in mind  
+
+> Projects here reflect how I work on real client systems.
+
+---
+
+## 💼 Who This Is For
+
+- Founders looking for a reliable engineer  
+- Teams needing backend stability  
+- Products moving from prototype to production  
+
+If you need someone who understands **both code and responsibility**, you're in the right place.
+
+---
+
+## 📬 Get In Touch
+
+Interested in working together?
+
+- View the live portfolio  
+- Review the projects  
+- Contact me via the links on my profile  
+
+Let’s build something solid.
+
+---
+
+> *Reliable systems, built with purpose.*
