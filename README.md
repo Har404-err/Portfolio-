@@ -1,94 +1,67 @@
-<p align="center">
-  <img src="https://files.catbox.moe/8lh91d.png" width="720" />
-</p>
+# MUH4RHQ Portfolio ⚡
 
+> **"Obsessed with efficiency. I automate the boring stuff so you can focus on what matters."**
 
-# 👋 Hi, I'm Karin  
-**Fullstack Engineer — Backend Focused**
+![Portfolio Preview](https://img.shields.io/badge/Status-Development-d4ff00?style=for-the-badge&labelColor=black)
+![License](https://img.shields.io/badge/License-MIT-white?style=for-the-badge&labelColor=black)
 
-I build reliable web systems with clean architecture, stable performance, and elegant interfaces.
+Welcome to the official portfolio of **MUH4RHQ**. This project showcases my expertise as a **High-Performance API Engineer** and **Applied AI Specialist**, wrapped in a futuristic, cyberpunk-inspired interface.
 
-This portfolio showcases how I approach **real-world problems**, not just demo projects.
+## 🚀 Overview
 
----
+This portfolio is not just a static site; it's a statement of **architectural integrity**. Built with speed and interactivity in mind, it features:
 
-## 🚀 What I Do
+*   **Cyberpunk Aesthetic:** Dark mode, neon accents (`#d4ff00`), and CRT scanline effects.
+*   **Interactive UX:** Custom cursor logic that works on both Desktop and Mobile (Touch).
+*   **Performance First:** Powered by Vite and React for instant loading.
+*   **Responsive Design:** Optimized for all viewports, from mobile screens to 4K monitors.
 
-I help individuals, startups, and teams build:
+## 🛠️ Tech Stack
 
-- Scalable backend systems  
-- Clean & responsive web applications  
-- APIs ready for production  
-- Systems that are easy to maintain and grow  
+### Core Logic
+*   **Node.js**: Backend runtime & automation logic.
+*   **Baileys**: Advanced WhatsApp Web API library for bot development.
+*   **Express**: Lightweight API framework.
+*   **TypeScript**: Type-safe development.
 
-My focus is not only *making things work*, but making sure they **keep working**.
+### Interface (Frontend)
+*   **React**: UI Library.
+*   **Tailwind CSS**: Utility-first styling engine.
+*   **Framer Motion**: Complex animations & transitions.
 
----
+## 📦 Installation
 
-## 🧠 My Engineering Mindset
+To run this portfolio locally on your machine (or Termux):
 
-- Stability over hype  
-- Clear structure over shortcuts  
-- Business needs first, technology second  
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Har404-err/Portofolio.git
+    cd Portofolio
+    ```
 
-Good software should be:
-- Easy to understand
-- Safe to operate
-- Ready for future changes
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
----
+3.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+    Access the site at `http://localhost:5173` (or the Network IP provided).
 
-## 🛠️ Core Skills
+## 👤 Author
 
-**Backend**
-- API Design & Development  
-- Database Architecture  
-- Authentication & Security  
-- Performance Optimization  
+**MUH4RHQ**
+*   **Role:** API Engineer & Bot Developer
+*   **Location:** Pontianak, ID (UTC+7)
+*   **Focus:** Applied AI Engineering & Automation
+*   **GitHub:** [Har404-err](https://github.com/Har404-err)
+*   **WhatsApp:** [Chat Me](https://wa.me/6282148570591)
 
-**Frontend**
-- Modern UI Development  
-- Responsive Layouts  
-- Clean Code Practices  
+## 📄 License
 
-**Production**
-- Deployment-ready systems  
-- Reliability awareness  
-- Long-term maintainability  
-
----
-
-## 📂 Selected Work
-
-This portfolio includes:
-- Production-minded architectures  
-- Clean, maintainable codebases  
-- UI built with usability in mind  
-
-> Projects here reflect how I work on real client systems.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-## 💼 Who This Is For
-
-- Founders looking for a reliable engineer  
-- Teams needing backend stability  
-- Products moving from prototype to production  
-
-If you need someone who understands **both code and responsibility**, you're in the right place.
-
----
-
-## 📬 Get In Touch
-
-Interested in working together?
-
-- View the live portfolio  
-- Review the projects  
-- Contact me via the links on my profile  
-
-Let’s build something solid.
-
----
-
-> *Reliable systems, built with purpose.*
+*Built with speed, powered by laziness.*

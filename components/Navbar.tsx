@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
         >
           <a href="#" className="font-jakarta text-xl md:text-2xl font-black tracking-tighter interactive text-white uppercase">
-            K4R1NXZ<span className="text-[#d4ff00]">.</span>
+            MUH4RHQ<span className="text-[#d4ff00]">&gt;</span>
           </a>
         </motion.div>
         

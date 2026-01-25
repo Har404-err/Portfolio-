@@ -33,12 +33,12 @@ const About: React.FC = () => {
                  className="border-l-2 border-[#d4ff00] pl-6 lg:pl-8 h-fit"
                >
                   <p className="text-white/80 font-light text-lg md:text-xl leading-relaxed max-w-md">
-                    Saya menggabungkan logika backend yang kuat dengan presisi frontend untuk menciptakan produk yang bukan sekadar fungsional, tapi juga revolusioner.
+                    Obsessed with efficiency. I automate the boring stuff so you can focus on what matters.
                   </p>
                   <div className="mt-8 flex flex-wrap gap-3">
-                      <span className="px-4 py-1.5 rounded-full border border-white/10 text-[9px] uppercase font-black text-[#d4ff00] bg-[#d4ff00]/5">Creative</span>
-                      <span className="px-4 py-1.5 rounded-full border border-white/10 text-[9px] uppercase font-black text-white/40">Reliable</span>
-                      <span className="px-4 py-1.5 rounded-full border border-white/10 text-[9px] uppercase font-black text-white/40">Scalable</span>
+                      <span className="px-4 py-1.5 rounded-full border border-white/10 text-[9px] uppercase font-black text-[#d4ff00] bg-[#d4ff00]/5">Automation</span>
+                      <span className="px-4 py-1.5 rounded-full border border-white/10 text-[9px] uppercase font-black text-white/40">REST API</span>
+                      <span className="px-4 py-1.5 rounded-full border border-white/10 text-[9px] uppercase font-black text-white/40">Bot Dev</span>
                   </div>
                </motion.div>
             </div>
@@ -56,20 +56,20 @@ const About: React.FC = () => {
               {
                 num: '01',
                 title: 'LOGIC',
-                subtitle: 'Architectural Backend',
-                desc: 'Membangun fondasi data yang kokoh dengan Rust, Go, dan optimasi SQL tingkat lanjut.'
+                subtitle: 'Bot Architecture',
+                desc: 'Building intelligent WhatsApp bots and scalable backend systems using Node.js and Baileys.'
               },
               {
                 num: '02',
-                title: 'INTERFACE',
-                subtitle: 'High Fidelity Frontend',
-                desc: 'Visualisasi data yang responsif dan interaktif menggunakan React & TypeScript.'
+                title: 'INTELLIGENCE',
+                subtitle: 'Applied AI Engineering',
+                desc: 'Orchestrating LLMs via API to build smart assistants. Connecting OpenAI, Gemini, and local models into real-world applications.'
               },
               {
                 num: '03',
                 title: 'LAUNCH',
-                subtitle: 'Seamless Production',
-                desc: 'Deployment otomatis dan manajemen infrastruktur untuk skalabilitas tanpa henti.'
+                subtitle: 'Production Ready',
+                desc: 'Optimized deployment for high-performance web apps and 24/7 active bot services.'
               }
             ].map((card, idx) => (
               <div 

@@ -19,22 +19,30 @@ const App: React.FC = () => {
     const dot = document.getElementById('custom-cursor');
     const ring = document.getElementById('cursor-follower');
     
-    const moveCursor = (e: MouseEvent) => {
+    const updatePosition = (x: number, y: number) => {
       if (dot && ring) {
-        dot.style.left = `${e.clientX}px`;
-        dot.style.top = `${e.clientY}px`;
-        
-        ring.style.left = `${e.clientX}px`;
-        ring.style.top = `${e.clientY}px`;
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+        ring.style.left = `${x}px`;
+        ring.style.top = `${y}px`;
       }
     };
-    window.addEventListener('mousemove', moveCursor);
+
+    const onMouseMove = (e: MouseEvent) => updatePosition(e.clientX, e.clientY);
+    const onTouchMove = (e: TouchEvent) => updatePosition(e.touches[0].clientX, e.touches[0].clientY);
+
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('touchmove', onTouchMove);
+    window.addEventListener('touchstart', onTouchMove);
     
     const updateInteractivity = () => {
       const interactives = document.querySelectorAll('a, button, .interactive');
       interactives.forEach(el => {
         el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
         el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+        // Touch feedback
+        el.addEventListener('touchstart', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('touchend', () => document.body.classList.remove('cursor-hover'));
       });
     };
 
@@ -43,7 +51,9 @@ const App: React.FC = () => {
     observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      window.removeEventListener('mousemove', moveCursor);
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('touchmove', onTouchMove);
+      window.removeEventListener('touchstart', onTouchMove);
       observer.disconnect();
     };
   }, []);
@@ -68,8 +78,8 @@ const App: React.FC = () => {
         <div className="w-full h-px bg-white/10"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
            <div className="flex flex-col gap-6">
-              <span className="font-jakarta text-2xl font-black uppercase text-white">K4R1NXZ</span>
-              <p className="text-white/40 max-w-xs font-medium">Membangun masa depan digital satu baris kode dalam satu waktu. Fokus pada performa dan skalabilitas.</p>
+              <span className="font-jakarta text-2xl font-black uppercase text-white">MUH4RHQ</span>
+              <p className="text-white/40 max-w-xs font-medium">Crafting digital experiences & intelligent bots. Specialized in API Development and Automation.</p>
            </div>
            
            <div className="flex flex-col gap-6">
@@ -84,14 +94,14 @@ const App: React.FC = () => {
            <div className="flex flex-col gap-6 md:items-end">
               <span className="text-[10px] uppercase font-black tracking-widest text-[#d4ff00]">Connect</span>
               <div className="flex gap-6">
-                 <a href="https://github.com/k4r1nxz" target="_blank" className="font-bold text-white hover:text-[#d4ff00] transition-colors interactive uppercase">Github</a>
-                 <a href="https://wa.me/6282135236137" target="_blank" className="font-bold text-white hover:text-[#d4ff00] transition-colors interactive uppercase">Whatsapp</a>
+                 <a href="https://github.com/Har404-err" target="_blank" className="font-bold text-white hover:text-[#d4ff00] transition-colors interactive uppercase">Github</a>
+                 <a href="https://wa.me/6282148570591" target="_blank" className="font-bold text-white hover:text-[#d4ff00] transition-colors interactive uppercase">Whatsapp</a>
               </div>
            </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 opacity-20">
-          <span className="text-[10px] uppercase tracking-[0.6em] font-black">© {new Date().getFullYear()} K4R1NXZ PORTFOLIO</span>
+          <span className="text-[10px] uppercase tracking-[0.6em] font-black">© {new Date().getFullYear()} MUH4RHQ PORTFOLIO</span>
           <span className="text-[10px] uppercase tracking-[0.6em] font-black">BUILT WITH SPEED</span>
         </div>
       </footer>

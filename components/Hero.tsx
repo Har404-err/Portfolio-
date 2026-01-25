@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, Variants } from 'framer-motion';
 
@@ -41,8 +40,8 @@ const Hero: React.FC = () => {
       >
         <div className="relative w-full max-w-6xl h-full filter contrast-[1.1] brightness-[0.7] transition-all duration-1000">
           <img 
-            src="https://files.catbox.moe/ddkxyc.jpg" 
-            alt="K4R1NXZ" 
+            src="https://c.termai.cc/i161/eVaNqs7.jpg" 
+            alt="MUH4RHQ" 
             className="w-full h-full object-cover rounded-[50px] md:rounded-[100px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]"></div>
@@ -61,7 +60,7 @@ const Hero: React.FC = () => {
         <motion.div variants={itemVariants} className="mb-6 flex items-center gap-4">
           <span className="w-8 md:w-16 h-px bg-[#d4ff00]/50"></span>
           <span className="text-[10px] md:text-[11px] font-black uppercase tracking-[1em] text-[#d4ff00]">
-            EST. MMXX
+            EST. MMXXV
           </span>
           <span className="w-8 md:w-16 h-px bg-[#d4ff00]/50"></span>
         </motion.div>
@@ -71,7 +70,7 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="font-jakarta text-[14vw] md:text-[15vw] font-black leading-[0.8] tracking-[-0.08em] uppercase select-none text-white mix-blend-difference"
           >
-            K4R1NXZ
+            MUH4RHQ
           </motion.h1>
         </motion.div>
 
@@ -80,7 +79,7 @@ const Hero: React.FC = () => {
           className="mt-12 md:mt-20 max-w-3xl px-4"
         >
           <p className="text-xl md:text-3xl lg:text-4xl text-white/90 font-light tracking-tight leading-snug">
-            Membangun <span className="text-[#d4ff00] font-black italic">Backend Handal</span> & <span className="text-white font-black italic underline decoration-[#d4ff00] underline-offset-[12px]">Antarmuka Elegan</span>.
+            <span className="text-[#d4ff00] font-black italic">High-Performance API Engineer</span> & <span className="text-white font-black italic underline decoration-[#d4ff00] underline-offset-[12px]">Automation Specialist</span>.
           </p>
         </motion.div>
 
@@ -95,7 +94,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-[#d4ff00] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
             <div className="absolute inset-0 border border-white/20 rounded-full group-hover:border-[#d4ff00] transition-colors"></div>
             <span className="relative z-10 text-white group-hover:text-black font-jakarta font-black uppercase text-[10px] md:text-xs tracking-[0.3em] flex items-center gap-4 transition-colors">
-              Mulai Diskusi <span className="text-xl transform group-hover:translate-x-2 transition-transform">→</span>
+              Start a Project <span className="text-xl transform group-hover:translate-x-2 transition-transform">→</span>
             </span>
           </a>
         </motion.div>

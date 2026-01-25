@@ -39,8 +39,8 @@ const Contact: React.FC = () => {
 
         <div className="flex flex-col">
           {[
-            { label: 'Open Source', title: 'GITHUB', url: 'https://github.com/k4r1nxz', accent: '#d4ff00' },
-            { label: 'Chat Now', title: 'WHATSAPP', url: 'https://wa.me/6282135236137', accent: '#ffffff' }
+            { label: 'Open Source', title: 'GITHUB', url: 'https://github.com/Har404-err', accent: '#d4ff00' },
+            { label: 'Chat Now', title: 'WHATSAPP', url: 'https://wa.me/6282148570591', accent: '#ffffff' }
           ].map((link, idx) => (
             <motion.a 
               key={idx}
@@ -71,11 +71,11 @@ const Contact: React.FC = () => {
         <div className="mt-32 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 border border-white/5">
            <div className="p-12 md:p-16 bg-[#050505] hover:bg-white/[0.02] transition-colors">
               <span className="text-[11px] uppercase font-black tracking-[0.6em] text-[#d4ff00] mb-8 block">Presence</span>
-              <p className="font-jakarta text-3xl md:text-4xl font-black text-white uppercase tracking-tight leading-none">INDONESIA <br/> <span className="text-white/20">UTC+7</span></p>
+              <p className="font-jakarta text-3xl md:text-4xl font-black text-white uppercase tracking-tight leading-none">PONTIANAK, ID <br/> <span className="text-white/20">UTC+7</span></p>
            </div>
            <div className="p-12 md:p-16 bg-[#050505] hover:bg-white/[0.02] transition-colors">
               <span className="text-[11px] uppercase font-black tracking-[0.6em] text-[#d4ff00] mb-8 block">Experience</span>
-              <p className="font-jakarta text-3xl md:text-4xl font-black text-white uppercase tracking-tight leading-none">BUILDING SINCE <br/> <span className="text-white/20">2019</span></p>
+              <p className="font-jakarta text-3xl md:text-4xl font-black text-white uppercase tracking-tight leading-none">BUILDING SINCE <br/> <span className="text-white/20">2025</span></p>
            </div>
         </div>
       </div>

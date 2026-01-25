@@ -3,9 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stackTop = [
-  { name: 'Rust', icon: 'devicon-rust-plain' },
-  { name: 'Go', icon: 'devicon-go-original-wordmark' },
-  { name: 'PHP', icon: 'devicon-php-plain' },
+  { name: 'NodeJS', icon: 'devicon-nodejs-plain' },
+  { name: 'Baileys', icon: 'devicon-npm-original-wordmark' },
+  { name: 'Express', icon: 'devicon-express-original' },
   { name: 'TypeScript', icon: 'devicon-typescript-plain' },
   { name: 'JavaScript', icon: 'devicon-javascript-plain' },
   { name: 'React', icon: 'devicon-react-original' },
@@ -30,8 +30,8 @@ const Stack: React.FC = () => {
             </h2>
         </div>
         <div className="max-w-xs md:text-right">
-            <p className="text-white/40 font-mono text-[10px] uppercase tracking-[0.3em] mb-4">Tech Audit — 2024</p>
-            <p className="text-base md:text-lg text-white font-light italic">Pilihan teknologi yang mementingkan kecepatan eksekusi dan keamanan jangka panjang.</p>
+            <p className="text-white/40 font-mono text-[10px] uppercase tracking-[0.3em] mb-4">Tech Audit — 2026</p>
+            <p className="text-base md:text-lg text-white font-light italic">Technologies selected for scalability, ease of maintenance, and high performance.</p>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ const Stack: React.FC = () => {
         <div className="md:col-span-2">
             <span className="text-[10px] md:text-[11px] uppercase font-black tracking-[0.4em] md:tracking-[0.6em] text-[#d4ff00] mb-4 md:mb-6 block">The Philosophy</span>
             <p className="text-2xl md:text-3xl font-light text-white leading-tight">
-                Saya tidak hanya menulis kode; saya merancang <span className="font-black italic">architectural integrity</span> yang mampu bertahan menghadapi traffic masif.
+                I don't just write code; I engineer <span className="font-black italic">scalable ecosystems</span> designed to handle real-world complexity.
             </p>
         </div>
         <div className="p-8 bg-white/5 rounded-2xl flex flex-col justify-between border border-white/5 group hover:border-[#d4ff00]/30 transition-all min-h-[140px]">
