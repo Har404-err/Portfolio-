@@ -5,6 +5,7 @@ import About from './components/About';
 import Stack from './components/Stack';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import MusicPlayer from './components/MusicPlayer';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 const App: React.FC = () => {
@@ -19,30 +20,45 @@ const App: React.FC = () => {
     const dot = document.getElementById('custom-cursor');
     const ring = document.getElementById('cursor-follower');
     
-    const updatePosition = (x: number, y: number) => {
-      if (dot && ring) {
-        dot.style.left = `${x}px`;
-        dot.style.top = `${y}px`;
-        ring.style.left = `${x}px`;
-        ring.style.top = `${y}px`;
-      }
+    // Helper untuk set posisi & visibilitas
+    const setCursor = (x: number, y: number, visible: boolean) => {
+        if (!dot || !ring) return;
+        
+        dot.style.opacity = visible ? '1' : '0';
+        ring.style.opacity = visible ? '1' : '0';
+        
+        if (visible) {
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+            ring.style.left = `${x}px`;
+            ring.style.top = `${y}px`;
+        }
     };
 
-    const onMouseMove = (e: MouseEvent) => updatePosition(e.clientX, e.clientY);
-    const onTouchMove = (e: TouchEvent) => updatePosition(e.touches[0].clientX, e.touches[0].clientY);
+    // Desktop Mouse
+    const onMouseMove = (e: MouseEvent) => setCursor(e.clientX, e.clientY, true);
+    
+    // Mobile Touch (Restored Dragging)
+    const onTouchStart = (e: TouchEvent) => setCursor(e.touches[0].clientX, e.touches[0].clientY, true);
+    const onTouchMove = (e: TouchEvent) => setCursor(e.touches[0].clientX, e.touches[0].clientY, true);
+    const onTouchEnd = () => {
+        if (dot && ring) {
+            dot.style.opacity = '0';
+            ring.style.opacity = '0';
+        }
+    };
 
+    // Event Listeners
     window.addEventListener('mousemove', onMouseMove);
-    window.addEventListener('touchmove', onTouchMove);
-    window.addEventListener('touchstart', onTouchMove);
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchmove', onTouchMove, { passive: true });
+    window.addEventListener('touchend', onTouchEnd);
     
     const updateInteractivity = () => {
       const interactives = document.querySelectorAll('a, button, .interactive');
       interactives.forEach(el => {
         el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
         el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
-        // Touch feedback
-        el.addEventListener('touchstart', () => document.body.classList.add('cursor-hover'));
-        el.addEventListener('touchend', () => document.body.classList.remove('cursor-hover'));
       });
     };
 
@@ -52,8 +68,9 @@ const App: React.FC = () => {
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('touchstart', onTouchStart);
       window.removeEventListener('touchmove', onTouchMove);
-      window.removeEventListener('touchstart', onTouchMove);
+      window.removeEventListener('touchend', onTouchEnd);
       observer.disconnect();
     };
   }, []);
@@ -66,6 +83,7 @@ const App: React.FC = () => {
       />
       
       <Navbar />
+      <MusicPlayer />
       
       <main className="relative z-10">
         <Hero />
